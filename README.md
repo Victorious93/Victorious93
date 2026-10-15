@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:BD00FF,100:FF00E5&height=200&section=header&text=Victorious%20Labs&fontSize=56&fontColor=0D0221&animation=fadeIn&fontAlignY=38&desc=Android%20tooling%20%C2%B7%20rooting%20%26%20flashing%20%C2%B7%20AI%20agents%20%C2%B7%20Linux%20installers&descAlignY=60&descSize=16" alt="Victorious Labs neon header" width="100%" />
+<img src="assets/header.png" alt="Victorious Labs — Android tooling · rooting & flashing · AI agents · Linux installers" width="100%" />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3500&pause=1000&color=00F0FF&center=true&vCenter=true&width=680&lines=Building+Android+%26+Linux+tooling;AI+agent+hubs+for+Termux+fleets;Root%2C+flash%2C+and+device+recovery;Pi+Zero+installers+%26+security+labs)](https://github.com/Victorious93)
+[<img src="assets/tagline.png" alt="Building Android & Linux tooling" width="100%" />](https://github.com/Victorious93)
 
 [![GitHub followers](https://img.shields.io/github/followers/Victorious93?label=Follow&style=for-the-badge&logo=github&color=0D0221&labelColor=BD00FF&logoColor=00F0FF)](https://github.com/Victorious93)
 
@@ -15,7 +15,7 @@
 - **Device recovery & installers** — flashing/root workflows and cross-platform Pi Zero tooling.
 - **Security labs & experiments** — KYC test labs, swarm-style pentest agents, file managers, and retro multiplayer.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F0FF,50:BD00FF,100:FF00E5&height=3&section=header" width="100%" alt="" />
+<img src="assets/divider.png" width="100%" alt="" />
 
 ## 🟣 Featured projects
 
@@ -40,7 +40,7 @@
 | **KYC-AuditLab** | IdentityShield: local-first KYC security test lab against a bundled simulator (Phase 1). |
 | **Victorious Keyboard** | Android IME based on FlorisBoard: encrypted clipboard, developer row, snippets, offline dictionary packs. |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F0FF,50:BD00FF,100:FF00E5&height=3&section=header" width="100%" alt="" />
+<img src="assets/divider.png" width="100%" alt="" />
 
 ## 🔷 Tech stack
 
@@ -59,6 +59,12 @@
 
 ## 📊 Stats
 
+See my activity at **[github.com/Victorious93](https://github.com/Victorious93)**.
+
+<details>
+<summary><b>GitHub stats</b> (live cards — may not render in the GitHub mobile app)</summary>
+<br />
+
 <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=Victorious93&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Victorious93 GitHub stats" />
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Victorious93&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top languages" />
@@ -68,10 +74,12 @@
   <img src="https://streak-stats.demolab.com/?user=Victorious93&theme=radical&hide_border=true" alt="GitHub streak stats" />
 </div>
 
+</details>
+
 <div align="center">
 
 *Victorious Labs — tools for Android, Linux, and agent-driven workflows.*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF00E5,50:BD00FF,100:00F0FF&height=120&section=footer" alt="" width="100%" />
+<img src="assets/footer.png" alt="" width="100%" />
 
 </div>
