@@ -13,10 +13,10 @@
 
 ## About
 
-- **Android & Termux tooling** — modules, rootfs work, and on-device apps around Magisk/KernelSU and Linux-on-Android.
-- **AI agent hubs** — Kotlin/Android agents with fleet IPC to Termux and security companions.
-- **Device recovery & installers** — flashing/root workflows and cross-platform Pi Zero tooling.
-- **Public experiments** — file managers, retro multiplayer, and swarm-style pentest agents.
+- **Android & Termux tooling** — Linux-on-Android suites, Magisk/KernelSU rootfs work, and privacy-focused on-device apps.
+- **AI agents & security** — Kotlin agent hubs with fleet IPC, AI-assisted pentesting, and local-first security test labs.
+- **Flashing & recovery** — Linux ISO flashing and Qualcomm EDL recovery tooling in Rust.
+- **Play** — N64/SNES emulation with chess and multiplayer, all in one Android app.
 
 ---
 
@@ -24,12 +24,18 @@
 
 | Project | Description |
 |:--------|:------------|
-| [**rootforge-os**](https://github.com/Victorious93/rootforge-os) | Debian live distro + Termux rootfs toolkit for Magisk/KernelSU module and boot-image work. |
-| [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | Android AI agent hub: JVM-tested tool engine, Forge builds, and fleet IPC to Termux/security companions. |
 | [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | Android app for N64 & Super Nintendo play, built-in chess, and local/online multiplayer (PLAY · CONNECT · CAST). |
-| [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) | Cross-platform tool installer for Pi Zero 1.3 — browser/native UI over USB OTG or SSH. |
-| [**MT-Manager-VIP**](https://github.com/Victorious93/MT-Manager-VIP) *(FileForge)* | FileForge: clean-room Android file manager skeleton (Compose) — M0, dual-pane planned. |
+| **VictorSuite** *(private)* | Termux-based Android Linux suite: proot containers, backup/restore, plugins, X11, and automation tools. |
+| [**RootForge OS**](https://github.com/Victorious93/rootforge-os) | Debian live distro + Termux rootfs toolkit for Magisk/KernelSU module and boot-image work. |
+| [**HackerAI**](https://github.com/Victorious93/hackeraiETC) *(fork)* | Find and fix vulnerabilities by chatting with AI. |
 | [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) *(fork)* | AGPL fork of Armur Pentest Swarm AI with Android companion APK for the DroidCommand fleet. |
+| **Victorious Flash** *(private)* | Distro installer: download, verify, and flash Linux ISOs to USB (Tauri v2). |
+| **EDL-Commander** *(private)* | Safety-first Rust framework for Qualcomm EDL recovery — Phase 1 Sahara core + simulator. |
+| **KYC-AuditLab** *(private)* | IdentityShield: local-first KYC security test lab against a bundled simulator (Phase 1). |
+| [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | Android AI agent hub: JVM-tested tool engine, Forge builds, and fleet IPC to Termux/security companions. |
+| **Victorious Keyboard** *(private)* | Android IME based on FlorisBoard: encrypted clipboard, developer row, snippets, offline dictionary packs. |
+
+<sub>Also: [BakerPi-Installer](https://github.com/Victorious93/BakerPi-Installer) (Pi Zero 1.3 tool installer) · [FileForge](https://github.com/Victorious93/MT-Manager-VIP) (Compose file manager, early stage)</sub>
 
 ---
 
@@ -43,6 +49,7 @@
   <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
   <img src="https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
   <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
   <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Jetpack Compose" />
