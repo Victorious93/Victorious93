@@ -11,34 +11,96 @@
 ## ⚡ About
 
 - **Android & Termux tooling** — modules, rootfs work, and on-device apps around Magisk/KernelSU and Linux-on-Android.
-- **AI agent hubs** — Kotlin/Android agents with fleet IPC to Termux and security companions.
+- **AI agent hubs** — a phone-side command center with a small fleet of companion apps and tools.
 - **Device recovery & installers** — flashing/root workflows and cross-platform Pi Zero tooling.
 - **Security labs & experiments** — KYC test labs, swarm-style pentest agents, file managers, and retro multiplayer.
 
 <img src="assets/divider.png" width="100%" alt="" />
 
-## 🟣 Featured projects
+## 🟣 The fleet
+
+[**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) is the **controller** — the hub I talk to. The other apps are members, grouped by how they connect (not by topic). This is a map, not a claim that every link is live.
+
+```mermaid
+flowchart LR
+  Hub["droidcommand-AI<br/>CONTROLLER"]
+
+  Hub --- BC
+  Hub --- EN
+  Hub --- TX
+  Hub --- HP
+
+  subgraph BC["BOUND_COMPANION"]
+    HAI["HackerAI-Commander"]
+    PSA["Pentest-Swarm-AI"]
+    EDL["EDL-Commander [planned]"]
+  end
+
+  subgraph EN["EXTERNAL_NODE"]
+    RF["rootforge-os"]
+    FM["File-Manager"]
+    VK["Victorious-Keyboard"]
+    VF["victorious-flash"]
+    VM["victorious-mesh"]
+  end
+
+  subgraph TX["TERMUX_IPC"]
+    VS["VictorSuite"]
+  end
+
+  subgraph HP["HOST_PROCESS_TOOL"]
+    KYC["KYC-AuditLab"]
+    BPI["BakerPi-Installer [Likely]"]
+  end
+```
+
+Public repos are linked. Names without a link are **not a public repo** on this account from here (they may still be private or not created yet). VictorLink64 is a separate project — **not** in this fleet.
+
+### Controller (hub)
+
+The app at the center. Members hang off this; they are not folded into it.
+
+- [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) — on-device AI command center: chat, tools, and the place the fleet is reached from.
+
+### BOUND_COMPANION
+
+Tightly bound apps signed with the shared key.
+
+- [**HackerAI-Commander**](https://github.com/Victorious93/HackerAI-Commander) — chat with AI to find and fix security issues; companion in this fleet.
+- [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) — swarm of specialist agents for authorized pentest work (AGPL fork with an Android companion).
+- **EDL-Commander** *[planned]* — Qualcomm EDL recovery helper (Sahara-first, safety-minded). No public repo here yet.
+
+### EXTERNAL_NODE
+
+Separate apps that talk over a small JSON command bridge.
+
+- [**rootforge-os**](https://github.com/Victorious93/rootforge-os) — Debian live toolkit and phone/desktop apps for Magisk/KernelSU module and boot-image work.
+- **File-Manager** — standalone Android file manager (dual panes, tabs, copy/move queue, search, trash). No public repo here yet.
+- **Victorious-Keyboard** — Android keyboard with encrypted clipboard, a developer row, snippets, and offline dictionaries. No public repo here yet.
+- **victorious-flash** — download, verify, and flash Linux ISOs to USB. No public repo here yet.
+- [**victorious-mesh**](https://github.com/Victorious93/victorious-mesh) — Android VPN / mesh node for a self-hosted Headscale network.
+
+### TERMUX_IPC
+
+Commands into Termux.
+
+- [**VictorSuite**](https://github.com/Victorious93/VictorSuite) — Termux-based Android Linux suite: proot containers, backup/restore, plugins, X11, and automation.
+
+### HOST_PROCESS_TOOL
+
+A local process / HTTP tool.
+
+- **KYC-AuditLab** — local-first KYC security test lab against a bundled simulator. No public repo here yet.
+- [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) *[Likely]* — browser or native UI to install tools on a Raspberry Pi Zero 1.3 over USB OTG or SSH.
+
+<img src="assets/divider.png" width="100%" alt="" />
+
+## 🎮 Also (not in the fleet)
 
 | Project | Description |
 |:--------|:------------|
-| [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | Android AI agent hub: JVM-tested tool engine, Forge builds, and fleet IPC to Termux/security companions. |
-| [**rootforge-os**](https://github.com/Victorious93/rootforge-os) | Debian live distro + Termux rootfs toolkit for Magisk/KernelSU module and boot-image work. |
 | [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | Android app for N64 & Super Nintendo play, built-in chess, and local/online multiplayer (PLAY · CONNECT · CAST). |
-| [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) | Cross-platform tool installer for Pi Zero 1.3 — browser/native UI over USB OTG or SSH. |
 | [**MT-Manager-VIP**](https://github.com/Victorious93/MT-Manager-VIP) *(FileForge)* | FileForge: clean-room Android file manager skeleton (Compose) — M0, dual-pane planned. |
-| [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) *(fork)* | AGPL fork of Armur Pentest Swarm AI with Android companion APK for the DroidCommand fleet. |
-| [**HackerAI**](https://github.com/Victorious93/hackeraiETC) *(fork · hackeraiETC)* | AI-powered penetration testing assistant — "find and fix vulnerabilities by chatting with AI"; companion app in the DroidCommand fleet. |
-
-### 🔒 Private work in progress
-
-| Project | Description |
-|:--------|:------------|
-| **Victorious File Manager** | Standalone Android file manager (Kotlin + Compose): dual panes, tabs, copy/move/delete/rename queue with undo, search, bookmarks, trash. |
-| **VictorSuite** | Termux-based Android Linux suite: proot containers, backup/restore, plugins, X11, and automation tools. |
-| **Victorious Flash** | Download, verify and flash Linux ISOs to USB (Tauri v2). |
-| **EDL-Commander** | Safety-first Rust framework for Qualcomm EDL recovery — Phase 1 Sahara core + simulator (no USB yet). |
-| **KYC-AuditLab** | IdentityShield: local-first KYC security test lab against a bundled simulator (Phase 1). |
-| **Victorious Keyboard** | Android IME based on FlorisBoard: encrypted clipboard, developer row, snippets, offline dictionary packs. |
 
 <img src="assets/divider.png" width="100%" alt="" />
 
