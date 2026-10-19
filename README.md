@@ -1,146 +1,134 @@
 <div align="center">
 
-<img src="assets/header.png" alt="Victorious Labs — Android tooling · rooting & flashing · AI agents · Linux installers" width="100%" />
+<img src="assets/banner.png" alt="VICTORIOUS93 — Victorious Framework: Android tooling, rooting and flashing, AI agents, Linux installers" width="100%" />
 
-[<img src="assets/tagline.png" alt="Building Android & Linux tooling" width="100%" />](https://github.com/Victorious93)
+<br />
 
-[![GitHub followers](https://img.shields.io/github/followers/Victorious93?label=Follow&style=for-the-badge&logo=github&color=0D0221&labelColor=BD00FF&logoColor=00F0FF)](https://github.com/Victorious93)
+[![Follow on GitHub](https://img.shields.io/github/followers/Victorious93?label=Follow&style=for-the-badge&logo=github&color=0A0F1F&labelColor=FF2E97&logoColor=00F0FF)](https://github.com/Victorious93)
+
+```text
+>_ victorious-framework --whoami
+```
 
 </div>
 
 ## ⚡ About
 
-- **Android & Termux tooling** — modules, rootfs work, and on-device apps around Magisk/KernelSU and Linux-on-Android.
-- **AI agent hubs** — a phone-side command center with a small fleet of companion apps and tools.
-- **Device recovery & installers** — flashing/root workflows and cross-platform Pi Zero tooling.
-- **Security labs & experiments** — KYC test labs, swarm-style pentest agents, file managers, and retro multiplayer.
+I'm Don, and I build the **Victorious Framework**: a set of Android, Linux and security tools that run as separate apps and connect to one hub app.
+
+- **Android & Termux tooling**: root modules, boot-image work, Linux-on-Android, a keyboard and a file manager.
+- **AI agent hub**: [droidcommand-AI](https://github.com/Victorious93/droidcommand-AI) is the controller. The other apps stay standalone and connect to it.
+- **Recovery & installers**: Qualcomm EDL recovery, Linux ISO flashing, and Raspberry Pi Zero tool installs.
+- **Security labs**: AI pentest assistants and a KYC test lab that only targets its own simulator.
+
+> Most of these projects are in **early development**. Each repo's README says what has and hasn't been tested on real hardware.
 
 <img src="assets/divider.png" width="100%" alt="" />
 
-## 🟣 The fleet
+## 🛰️ Featured projects
 
-[**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) is the **controller** — the hub I talk to. The other apps are members, grouped by how they connect (not by topic). This is a map, not a claim that every link is live.
+| Project | What it is |
+|:--|:--|
+| [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | The hub of the fleet. You chat with it, and it calls tools under a security policy, runs “Forge” build workflows, and sends commands to member apps. Kotlin + Jetpack Compose. The JVM engine is CI-tested. |
+| [**rootforge-os**](https://github.com/Victorious93/rootforge-os) | A Debian live distro and Termux rootfs toolkit for Magisk/KernelSU module and boot-image work, with phone and desktop apps. |
+| [**Victorious Keyboard**](https://github.com/Victorious93/Victorious-Keyboard) | An Android keyboard based on FlorisBoard, with an AES-256-GCM encrypted clipboard, a terminal key row, snippets and offline dictionary packs. Nothing leaves the device. |
+| [**VictorSuite**](https://github.com/Victorious93/VictorSuite) | A Termux/ZeroTermux-based Android Linux suite with proot containers, backup/restore, a plugin framework, X11 and automation. |
+| [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | Plays N64 (Mupen64Plus) and SNES (bsnes) games from your own files, with built-in chess and online, Wi-Fi or Bluetooth rooms. Early beta. |
+| [**HackerAI-Commander**](https://github.com/Victorious93/HackerAI-Commander) | A fork of `hackerai-tech/hackerai`, the AI pentest assistant, plus a Kotlin/Compose Android companion that DroidCommand controls over AIDL. |
+
+<img src="assets/divider.png" width="100%" alt="" />
+
+## 🧰 More projects
+
+- [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI): an AGPL fork of Armur-Ai's Go multi-agent pentest CLI, with an Android companion APK for the fleet.
+- [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer): installs tools on a Raspberry Pi Zero 1.3 over USB OTG or SSH, from a browser or native UI (FastAPI).
+- [**victorious-mesh**](https://github.com/Victorious93/victorious-mesh): an Android VPN/mesh node for a self-hosted Headscale network. It's a tailscale-android fork.
+- [**KYC-AuditLab**](https://github.com/Victorious93/KYC-AuditLab): IdentityShield, a local-first KYC security test lab that runs against its own bundled simulator.
+- [**Victorious Flash**](https://github.com/Victorious93/victorious-flash): a Tauri v2 desktop app that downloads Linux ISOs, checks them against checksums and flashes them to USB or SD.
+- [**EDL-Commander**](https://github.com/Victorious93/EDL-Commander): a safety-first Rust framework for Qualcomm EDL recovery. It has a Sahara core and a simulator, and hasn't been tested on real hardware yet.
+- [**File-Manager**](https://github.com/Victorious93/File-Manager): a standalone Android file manager with dual panes, tabs, and a copy/move queue with undo.
+- [**DreamOS-Victorious**](https://github.com/Victorious93/DreamOS-Victorious): Phase 1 groundwork for pulling Android ROM source together (profile validator, reproducible source bundle, SHA-256 integrity check). It isn't flashable.
+- [**MT-Manager-VIP**](https://github.com/Victorious93/MT-Manager-VIP) *(FileForge)*: the skeleton of a clean-room Compose file manager (milestone M0).
+
+<details>
+<summary><b>🟣 How the fleet connects</b> (diagram)</summary>
+<br />
 
 ```mermaid
 flowchart LR
   Hub["droidcommand-AI<br/>CONTROLLER"]
-
   Hub --- BC
   Hub --- EN
   Hub --- TX
   Hub --- HP
-
   subgraph BC["BOUND_COMPANION"]
     HAI["HackerAI-Commander"]
     PSA["Pentest-Swarm-AI"]
-    EDL["EDL-Commander [planned]"]
+    EDL["EDL-Commander"]
   end
-
   subgraph EN["EXTERNAL_NODE"]
     RF["rootforge-os"]
     FM["File-Manager"]
-    VK["Victorious-Keyboard"]
-    VF["victorious-flash"]
+    VK["Victorious Keyboard"]
+    VF["Victorious Flash"]
     VM["victorious-mesh"]
   end
-
   subgraph TX["TERMUX_IPC"]
     VS["VictorSuite"]
   end
-
   subgraph HP["HOST_PROCESS_TOOL"]
     KYC["KYC-AuditLab"]
-    BPI["BakerPi-Installer [Likely]"]
+    BPI["BakerPi-Installer"]
   end
 ```
 
-Public repos are linked. Names without a link are **not a public repo** on this account from here (they may still be private or not created yet). VictorLink64 is a separate project — **not** in this fleet.
+This shows how the apps are meant to connect. Not every link is wired up yet. VictorLink64 isn't part of the fleet.
 
-### Controller (hub)
-
-The app at the center. Members hang off this; they are not folded into it.
-
-- [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) — on-device AI command center: chat, tools, and the place the fleet is reached from.
-
-### BOUND_COMPANION
-
-Tightly bound apps signed with the shared key.
-
-- [**HackerAI-Commander**](https://github.com/Victorious93/HackerAI-Commander) — chat with AI to find and fix security issues; companion in this fleet.
-- [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) — swarm of specialist agents for authorized pentest work (AGPL fork with an Android companion).
-- **EDL-Commander** *[planned]* — Qualcomm EDL recovery helper (Sahara-first, safety-minded). No public repo here yet.
-
-### EXTERNAL_NODE
-
-Separate apps that talk over a small JSON command bridge.
-
-- [**rootforge-os**](https://github.com/Victorious93/rootforge-os) — Debian live toolkit and phone/desktop apps for Magisk/KernelSU module and boot-image work.
-- **File-Manager** — standalone Android file manager (dual panes, tabs, copy/move queue, search, trash). No public repo here yet.
-- **Victorious-Keyboard** — Android keyboard with encrypted clipboard, a developer row, snippets, and offline dictionaries. No public repo here yet.
-- **victorious-flash** — download, verify, and flash Linux ISOs to USB. No public repo here yet.
-- [**victorious-mesh**](https://github.com/Victorious93/victorious-mesh) — Android VPN / mesh node for a self-hosted Headscale network.
-
-### TERMUX_IPC
-
-Commands into Termux.
-
-- [**VictorSuite**](https://github.com/Victorious93/VictorSuite) — Termux-based Android Linux suite: proot containers, backup/restore, plugins, X11, and automation.
-
-### HOST_PROCESS_TOOL
-
-A local process / HTTP tool.
-
-- **KYC-AuditLab** — local-first KYC security test lab against a bundled simulator. No public repo here yet.
-- [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) *[Likely]* — browser or native UI to install tools on a Raspberry Pi Zero 1.3 over USB OTG or SSH.
-
-<img src="assets/divider.png" width="100%" alt="" />
-
-## 🎮 Also (not in the fleet)
-
-| Project | Description |
-|:--------|:------------|
-| [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | Android app for N64 & Super Nintendo play, built-in chess, and local/online multiplayer (PLAY · CONNECT · CAST). |
-| [**MT-Manager-VIP**](https://github.com/Victorious93/MT-Manager-VIP) *(FileForge)* | FileForge: clean-room Android file manager skeleton (Compose) — M0, dual-pane planned. |
+</details>
 
 <img src="assets/divider.png" width="100%" alt="" />
 
 ## 🔷 Tech stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Kotlin-0D0221?style=for-the-badge&logo=kotlin&logoColor=BD00FF" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/Java-0D0221?style=for-the-badge&logo=openjdk&logoColor=FF00E5" alt="Java" />
-  <img src="https://img.shields.io/badge/Python-0D0221?style=for-the-badge&logo=python&logoColor=00F0FF" alt="Python" />
-  <img src="https://img.shields.io/badge/Rust-0D0221?style=for-the-badge&logo=rust&logoColor=FF00E5" alt="Rust" />
-  <img src="https://img.shields.io/badge/Go-0D0221?style=for-the-badge&logo=go&logoColor=00F0FF" alt="Go" />
-  <img src="https://img.shields.io/badge/C-0D0221?style=for-the-badge&logo=c&logoColor=BD00FF" alt="C" />
-  <img src="https://img.shields.io/badge/Shell-0D0221?style=for-the-badge&logo=gnubash&logoColor=00F0FF" alt="Shell" />
-  <img src="https://img.shields.io/badge/HTML-0D0221?style=for-the-badge&logo=html5&logoColor=FF00E5" alt="HTML" />
-  <img src="https://img.shields.io/badge/Android-0D0221?style=for-the-badge&logo=android&logoColor=00F0FF" alt="Android" />
-  <img src="https://img.shields.io/badge/Jetpack%20Compose-0D0221?style=for-the-badge&logo=jetpackcompose&logoColor=BD00FF" alt="Jetpack Compose" />
+  <img src="https://img.shields.io/badge/Kotlin-0A0F1F?style=for-the-badge&logo=kotlin&logoColor=00F0FF" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Java-0A0F1F?style=for-the-badge&logo=openjdk&logoColor=FF2E97" alt="Java" />
+  <img src="https://img.shields.io/badge/Python-0A0F1F?style=for-the-badge&logo=python&logoColor=00F0FF" alt="Python" />
+  <img src="https://img.shields.io/badge/Rust-0A0F1F?style=for-the-badge&logo=rust&logoColor=FF2E97" alt="Rust" />
+  <img src="https://img.shields.io/badge/Go-0A0F1F?style=for-the-badge&logo=go&logoColor=00F0FF" alt="Go" />
+  <img src="https://img.shields.io/badge/TypeScript-0A0F1F?style=for-the-badge&logo=typescript&logoColor=FF2E97" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Shell-0A0F1F?style=for-the-badge&logo=gnubash&logoColor=00F0FF" alt="Shell" />
+  <img src="https://img.shields.io/badge/C%2FC%2B%2B-0A0F1F?style=for-the-badge&logo=c&logoColor=FF2E97" alt="C/C++" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-0A0F1F?style=for-the-badge&logo=android&logoColor=00F0FF" alt="Android" />
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-0A0F1F?style=for-the-badge&logo=jetpackcompose&logoColor=FF2E97" alt="Jetpack Compose" />
+  <img src="https://img.shields.io/badge/Gradle-0A0F1F?style=for-the-badge&logo=gradle&logoColor=00F0FF" alt="Gradle" />
+  <img src="https://img.shields.io/badge/FastAPI-0A0F1F?style=for-the-badge&logo=fastapi&logoColor=FF2E97" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Tauri-0A0F1F?style=for-the-badge&logo=tauri&logoColor=00F0FF" alt="Tauri" />
+  <img src="https://img.shields.io/badge/Docker-0A0F1F?style=for-the-badge&logo=docker&logoColor=FF2E97" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-0A0F1F?style=for-the-badge&logo=githubactions&logoColor=00F0FF" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Termux-0A0F1F?style=for-the-badge&logo=gnometerminal&logoColor=FF2E97" alt="Termux" />
 </p>
 
-## 📊 Stats
-
-See my activity at **[github.com/Victorious93](https://github.com/Victorious93)**.
-
 <details>
-<summary><b>GitHub stats</b> (live cards — may not render in the GitHub mobile app)</summary>
+<summary><b>📊 GitHub stats</b> (live cards from third-party services; may not load in the GitHub mobile app)</summary>
 <br />
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Victorious93&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Victorious93 GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Victorious93&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Victorious93&show_icons=true&hide_border=true&bg_color=0A0F1F&title_color=FF2E97&text_color=9FB4E8&icon_color=00F0FF&ring_color=FF2E97" alt="Victorious93 GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Victorious93&layout=compact&hide_border=true&langs_count=8&exclude_repo=VictorLink64&bg_color=0A0F1F&title_color=FF2E97&text_color=9FB4E8" alt="Top languages (excluding vendored emulator code)" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com/?user=Victorious93&theme=radical&hide_border=true" alt="GitHub streak stats" />
+  <img src="https://streak-stats.demolab.com/?user=Victorious93&hide_border=true&background=0A0F1F&ring=FF2E97&fire=FF2E97&currStreakNum=00F0FF&currStreakLabel=00F0FF&sideNums=FF2E97&sideLabels=9FB4E8&dates=6B7DB3&stroke=1B2A5C" alt="GitHub streak stats" />
 </div>
 
 </details>
 
 <div align="center">
 
-*Victorious Labs — tools for Android, Linux, and agent-driven workflows.*
+<sub><code>&gt;_</code> Victorious Framework: tools for Android, Linux, and agent-driven workflows.</sub>
 
 <img src="assets/footer.png" alt="" width="100%" />
 
