@@ -102,7 +102,7 @@ Grouped by how each app connects to the hub. Package IDs come from each projectâ
 
 | | App | Package | Purpose |
 |:-:|:--|:--|:--|
-| <img src="assets/logos/victorops-zombies-logo.jpg" width="44" alt="" /> | VictorOps Zombies *(private)* | `com.victorious.zombie` | Wave-survival zombies game (libGDX + Kotlin) |
+| <img src="assets/logos/victorops-zombies-logo.jpg" width="44" alt="" /> | [VictorOps Zombies](https://github.com/Victorious93/victorops-zombies) | `com.victorious.zombie` | Wave-survival zombies game (libGDX + Kotlin) |
 
 <img src="assets/divider.png" width="100%" alt="" />
 
