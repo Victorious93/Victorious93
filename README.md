@@ -175,6 +175,11 @@ Grouped by how each app connects to the hub. Package IDs are shown where the pro
 - **Package id:** *(cross-platform tool — n/a)*
 - **Purpose:** Cross-platform tool that installs/flashes in Raspberry Pi imaging style.
 
+### DreamOS-Victorious
+
+- **Repo:** [Victorious93/DreamOS-Victorious](https://github.com/Victorious93/DreamOS-Victorious)
+- **Purpose:** Phase 1 Android ROM source integration foundation: host-side profile validator, reproducible source bundle and SHA-256 integrity verifier (not flashable).
+
 **Social / Marketplace Apps**
 
 ### <img src="assets/logos/matchvictorious-logo.jpg" alt="MatchVictorious" width="64" valign="middle"> MatchVictorious
@@ -189,6 +194,13 @@ Grouped by how each app connects to the hub. Package IDs are shown where the pro
 - **Package id:** `com.victorious.victoryped`
 - **Purpose:** Social network and marketplace for bully breeders.
 
+**Games**
+
+### <img src="assets/logos/victorops-zombies-logo.jpg" alt="VictorOps Zombies" width="64" valign="middle"> VictorOps Zombies
+
+- **Repo:** victorops-zombies *(private)*
+- **Purpose:** Original CODBOZ-style wave-survival zombies game for Android.
+
 <img src="assets/divider.png" width="100%" alt="" />
 
 ## 🧰 More apps & tools
@@ -197,7 +209,6 @@ Projects by Don that are not (yet) wired into the fleet connection model above.
 
 | | Project | What it is |
 |:--:|:--|:--|
-| | [**DreamOS-Victorious**](https://github.com/Victorious93/DreamOS-Victorious) | Phase 1 groundwork for Android ROM source integration: profile validator, reproducible source bundle, SHA-256 integrity check (not flashable). |
 | <img src="assets/icons/droidpilot.png" height="28" align="center" alt="" /> | [**droidpilot**](https://github.com/Victorious93/droidpilot) *(DroidPilot Forge)* | Stable Android device automation for AI agents via Accessibility Service + MCP — no ADB, no OCR; enhanced fork for agentic control. |
 
 <img src="assets/divider.png" width="100%" alt="" />
