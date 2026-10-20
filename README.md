@@ -101,7 +101,7 @@ Grouped by how each app connects to the hub. Package IDs are shown where the pro
 - **Package id:** `ai.victorious.filemanager` (debug: `ai.victorious.filemanager.debug`) *(rename in progress — repo still uses `ai.victorious.victorfiles`)*
 - **Purpose:** Dual-pane power-user file manager aiming to beat MT Manager VIP.
 
-#### Victorious-Keyboard *(logo pending)*
+#### <img src="assets/logos/victorious-keyboard-logo.png" alt="Victorious-Keyboard" width="64" valign="middle"> Victorious-Keyboard
 
 - **Repo:** [Victorious93/Victorious-Keyboard](https://github.com/Victorious93/Victorious-Keyboard)
 - **Package id:** `com.victorious.keyboard` *(code namespace still `dev.patrickgold.florisboard` — rename queued)*
@@ -155,7 +155,7 @@ Grouped by how each app connects to the hub. Package IDs are shown where the pro
 - **Package id:** `com.victorious.cam`
 - **Purpose:** OBS-style virtual camera APK.
 
-**Termux / Host**
+**Host & Shell Tools**
 
 ### <img src="assets/logos/victorsuite-logo.png" alt="VictorSuite" width="64" valign="middle"> VictorSuite
 
