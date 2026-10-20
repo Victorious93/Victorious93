@@ -33,47 +33,153 @@ I'm Don, and I build the **Victorious Framework**: a set of Android, Linux and s
 
 <img src="assets/divider.png" width="100%" alt="" />
 
+<p align="center"><img src="assets/logos/victorious-framework-hoodie-brand.png" alt="Victorious Framework" width="280"></p>
+
 ## 🛰️ Victorious fleet
 
-Grouped by how each app connects to the hub. Package IDs are shown where the project defines one.
+Grouped by how each app connects to the hub. Package IDs are shown where the project defines one. Private repos are listed by name only.
 
-### Controllers / hub
+**Controller / Hub**
 
-| | Project | Package | What it is |
-|:--:|:--|:--|:--|
-| <img src="assets/icons/droidcommand-AI.png" height="28" align="center" alt="" /> | [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | `ai.droidcommand.app` | Android AI agent hub: JVM-tested tool engine, Forge builds, and fleet IPC to Termux/security companions. |
-| <img src="assets/icons/pyra-claw.png" height="28" align="center" alt="" /> | **Pyra Claw** *(private, in development)* | — | Pi 5 + ESP32 command hub that bridges the phone controller to physical devices. |
+### <img src="assets/logos/droidcommand-logo.jpg" alt="droidcommand-AI" width="64" valign="middle"> droidcommand-AI
 
-### Bound companions
+- **Repo:** [Victorious93/droidcommand-AI](https://github.com/Victorious93/droidcommand-AI)
+- **Package id:** `ai.droidcommand.app`
+- **Purpose:** The fleet controller/brain — remote command and orchestration of every app in the fleet.
 
-| | Project | Package | What it is |
-|:--:|:--|:--|:--|
-| <img src="assets/icons/HackerAI-Commander.png" height="28" align="center" alt="" /> | [**HackerAI-Commander**](https://github.com/Victorious93/HackerAI-Commander) | `ai.hackerai.companion` | Fork of `hackerai-tech/hackerai` — AI pentest assistant with a Kotlin/Compose Android companion for the fleet. |
-| <img src="assets/icons/Pentest-Swarm-AI.png" height="28" align="center" alt="" /> | [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) | `ai.pentestswarm.companion` | AGPL fork of Armur Pentest Swarm AI with an Android companion APK for the DroidCommand fleet. |
-| <img src="assets/icons/EDL-Commander.png" height="28" align="center" alt="" /> | [**EDL-Commander**](https://github.com/Victorious93/EDL-Commander) | `ai.edlcommander.companion` | Safety-first Rust framework for Qualcomm EDL recovery — Phase 1 Sahara core + simulator (no USB yet). |
+### <img src="assets/logos/pyraclaw-logo.jpg" alt="Pyra Claw" width="64" valign="middle"> Pyra Claw
 
-### External nodes
+- **Repo:** pyra-claw *(private)*
+- **Package id:** *(hub / hardware — not an Android package)*
+- **Purpose:** Raspberry Pi 5 + ESP32 command hub that bridges the phone controller to physical devices.
 
-| | Project | Package | What it is |
-|:--:|:--|:--|:--|
-| <img src="assets/icons/rootforge-os.png" height="28" align="center" alt="" /> | [**rootforge-os**](https://github.com/Victorious93/rootforge-os) | — | Debian live distro + Termux rootfs toolkit for Magisk/KernelSU module and boot-image work. |
-| <img src="assets/icons/File-Manager.png" height="28" align="center" alt="" /> | [**File-Manager**](https://github.com/Victorious93/File-Manager) *(VictorFiles)* | `ai.victorious.filemanager` | Standalone Android file manager with dual panes, tabs, copy/move queue with undo, and optional fleet stub. |
-| <img src="assets/icons/Victorious-Keyboard.png" height="28" align="center" alt="" /> | [**Victorious-Keyboard**](https://github.com/Victorious93/Victorious-Keyboard) | — | Android IME based on FlorisBoard: encrypted clipboard, developer row, snippets, offline dictionary packs. |
-| <img src="assets/icons/victorious-flash.png" height="28" align="center" alt="" /> | [**victorious-flash**](https://github.com/Victorious93/victorious-flash) | — | Download, verify and flash Linux ISOs to USB (Tauri v2). |
-| <img src="assets/icons/victorious-mesh.png" height="28" align="center" alt="" /> | [**victorious-mesh**](https://github.com/Victorious93/victorious-mesh) | — | Android VPN/mesh node for the droidcommand-AI fleet (self-hosted Headscale). |
-| <img src="assets/icons/victorious-browser.png" height="28" align="center" alt="" /> | [**victorious-browser**](https://github.com/Victorious93/victorious-browser) | — | Fleet security/recon browser: WebView shell, on-device HTTP(S) inspection, and Messenger fleet bridge. |
-| <img src="assets/icons/victorsms.png" height="28" align="center" alt="" /> | **victorsms** *(private, in development)* | `com.victorious.sms` | Fleet universal messaging APK (Matrix + bridges; EXTERNAL_NODE for droidcommand-AI). |
-| <img src="assets/icons/victorlaunch.png" height="28" align="center" alt="" /> | **victorlaunch** *(private, in development)* | `com.victorious.launch` | Fleet-native Android home launcher (Lawnchair-based EXTERNAL_NODE for droidcommand-AI). |
-| <img src="assets/icons/victorspoof.png" height="28" align="center" alt="" /> | **victorspoof** *(private, in development)* | `com.victorious.spoof` | Fleet novelty/prank caller-ID Android app (owned-number pool + Twilio; EXTERNAL_NODE). |
-| <img src="assets/icons/VictorLink64.png" height="28" align="center" alt="" /> | [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | — | N64 (Mupen64Plus) and SNES (bsnes) from your own files, plus built-in chess and online / Wi-Fi / Bluetooth rooms. |
+### <img src="assets/logos/victormodem-logo.jpg" alt="VictorModem" width="64" valign="middle"> VictorModem *(in planning)*
 
-### Termux / host
+- **Repo:** victormodem *(private)*
+- **Package id:** *(in planning / hardware — no confirmed package id yet)*
+- **Purpose:** ESP32-S3 + cellular modem board that gives the fleet an independent second line.
 
-| | Project | Package | What it is |
-|:--:|:--|:--|:--|
-| <img src="assets/icons/VictorSuite.png" height="28" align="center" alt="" /> | [**VictorSuite**](https://github.com/Victorious93/VictorSuite) | — | Termux-based Android Linux suite: proot containers, backup/restore, plugins, X11, and automation tools. |
-| <img src="assets/icons/KYC-AuditLab.png" height="28" align="center" alt="" /> | [**KYC-AuditLab**](https://github.com/Victorious93/KYC-AuditLab) | `com.identityshield.companion` | IdentityShield: local-first KYC security test lab against a bundled simulator (Phase 1). |
-| <img src="assets/icons/BakerPi-Installer.png" height="28" align="center" alt="" /> | [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) | — | Cross-platform tool installer for Pi Zero 1.3 — browser/native UI over USB OTG or SSH. |
+**Bound Companions**
+
+### <img src="assets/logos/hackerai-logo.jpg" alt="HackerAI-Commander" width="64" valign="middle"> HackerAI-Commander
+
+- **Repo:** [Victorious93/HackerAI-Commander](https://github.com/Victorious93/HackerAI-Commander)
+- **Package id:** `ai.hackerai.companion`
+- **Purpose:** Companion to the `hackeraiETC` fork — an AI hacking assistant.
+
+### <img src="assets/logos/pentest-swarm-logo.png" alt="Pentest-Swarm-AI" width="64" valign="middle"> Pentest-Swarm-AI
+
+- **Repo:** [Victorious93/Pentest-Swarm-AI](https://github.com/Victorious93/Pentest-Swarm-AI)
+- **Package id:** `ai.pentestswarm.companion`
+- **Purpose:** Multi-agent pentest swarm companion.
+
+### <img src="assets/logos/edl-commander-logo.png" alt="EDL-Commander" width="64" valign="middle"> EDL-Commander
+
+- **Repo:** [Victorious93/EDL-Commander](https://github.com/Victorious93/EDL-Commander)
+- **Package id:** `ai.edlcommander.companion`
+- **Purpose:** Safety-first Qualcomm EDL (Emergency Download mode) framework/tool companion.
+
+**External Nodes**
+
+### <img src="assets/logos/rootforge-logo.jpg" alt="rootforge-os" width="64" valign="middle"> rootforge-os
+
+- **Repo:** [Victorious93/rootforge-os](https://github.com/Victorious93/rootforge-os)
+- **Package id:** `ai.rootforge.os`
+- **Purpose:** Android rooting / root-management app.
+
+### <img src="assets/logos/file-manager-logo.png" alt="File-Manager" width="64" valign="middle"> File-Manager
+
+- **Repo:** [Victorious93/File-Manager](https://github.com/Victorious93/File-Manager)
+- **Package id:** `ai.victorious.filemanager` (debug: `ai.victorious.filemanager.debug`) *(rename in progress — repo still uses `ai.victorious.victorfiles`)*
+- **Purpose:** Dual-pane power-user file manager aiming to beat MT Manager VIP.
+
+#### Victorious-Keyboard *(logo pending)*
+
+- **Repo:** [Victorious93/Victorious-Keyboard](https://github.com/Victorious93/Victorious-Keyboard)
+- **Package id:** `com.victorious.keyboard` *(code namespace still `dev.patrickgold.florisboard` — rename queued)*
+- **Purpose:** Custom Android keyboard with integrated media controls.
+
+### <img src="assets/logos/victorious-flash-logo.png" alt="Victorious Flash (Distro Installer)" width="64" valign="middle"> Victorious Flash (Distro Installer)
+
+- **Repo:** [Victorious93/victorious-flash](https://github.com/Victorious93/victorious-flash) *(desktop app)*
+- **Package id:** `com.victorious.flash.android` *(desktop app — not an APK)*
+- **Purpose:** Desktop app to pick a Linux distro, download its official ISO, and write it to USB.
+
+### <img src="assets/logos/victorious-mesh-logo.jpg" alt="Victorious Mesh" width="64" valign="middle"> Victorious Mesh
+
+- **Repo:** [Victorious93/victorious-mesh](https://github.com/Victorious93/victorious-mesh)
+- **Package id:** `com.victorious.mesh`
+- **Purpose:** Secure mesh-networking / VPN Android app.
+
+### <img src="assets/logos/victorious-browser-logo.jpg" alt="Victorious Browser" width="64" valign="middle"> Victorious Browser
+
+- **Repo:** [Victorious93/victorious-browser](https://github.com/Victorious93/victorious-browser)
+- **Package id:** `com.victorious.browser`
+- **Purpose:** Fleet security / recon browser with web interception.
+
+### <img src="assets/logos/victorsms-logo.jpg" alt="VictorSMS" width="64" valign="middle"> VictorSMS
+
+- **Repo:** victorsms *(private)*
+- **Package id:** `com.victorious.sms`
+- **Purpose:** Universal messaging app (Matrix-based) with voice cloning and persona learning.
+
+### <img src="assets/logos/victorlaunch-logo.jpg" alt="VictorLaunch" width="64" valign="middle"> VictorLaunch
+
+- **Repo:** victorlaunch *(private)*
+- **Package id:** `com.victorious.launch`
+- **Purpose:** Nova-class, Lawnchair-based fleet home-screen launcher.
+
+### <img src="assets/logos/victorspoof-logo.jpg" alt="VictorSpoof" width="64" valign="middle"> VictorSpoof
+
+- **Repo:** victorspoof *(private)*
+- **Package id:** `com.victorious.spoof`
+- **Purpose:** Legal novelty / prank caller-ID app with strict compliance guardrails.
+
+### <img src="assets/logos/victorlink64-logo.png" alt="VictorLink64" width="64" valign="middle"> VictorLink64
+
+- **Repo:** [Victorious93/VictorLink64](https://github.com/Victorious93/VictorLink64)
+- **Package id:** `org.victoriousframework.victorlink64` *(Kotlin / Jetpack Compose; Android 9+)*
+- **Purpose:** Multi-game emulator + play hub — play N64 and SNES games, built-in chess, and multiplayer with friends — in one Android app.
+
+### <img src="assets/logos/victorcam-logo.jpg" alt="VictorCam" width="64" valign="middle"> VictorCam
+
+- **Repo:** VictorCam *(not public)*
+- **Package id:** `com.victorious.cam`
+- **Purpose:** OBS-style virtual camera APK.
+
+**Termux / Host**
+
+### <img src="assets/logos/victorsuite-logo.png" alt="VictorSuite" width="64" valign="middle"> VictorSuite
+
+- **Repo:** [Victorious93/VictorSuite](https://github.com/Victorious93/VictorSuite)
+- **Package id:** `com.termux` (lineage; `TERMUX_IPC`)
+- **Purpose:** Termux-based Android Linux suite — the fleet home for container-style workloads.
+
+### <img src="assets/logos/kyc-auditlab-logo.png" alt="KYC-AuditLab / IdentityShield" width="64" valign="middle"> KYC-AuditLab / IdentityShield
+
+- **Repo:** [Victorious93/KYC-AuditLab](https://github.com/Victorious93/KYC-AuditLab)
+- **Package id:** `com.identityshield.companion`
+- **Purpose:** Local KYC / identity audit lab.
+
+### <img src="assets/logos/bakerpi-logo.jpg" alt="BakerPi-Installer" width="64" valign="middle"> BakerPi-Installer
+
+- **Repo:** [Victorious93/BakerPi-Installer](https://github.com/Victorious93/BakerPi-Installer)
+- **Package id:** *(cross-platform tool — n/a)*
+- **Purpose:** Cross-platform tool that installs/flashes in Raspberry Pi imaging style.
+
+**Social / Marketplace Apps**
+
+### <img src="assets/logos/matchvictorious-logo.jpg" alt="MatchVictorious" width="64" valign="middle"> MatchVictorious
+
+- **Repo:** [Victorious93/matchvictorious](https://github.com/Victorious93/matchvictorious)
+- **Package id:** `com.victorious.match`
+- **Purpose:** Dating app.
+
+### <img src="assets/logos/victorpedigree-logo.jpg" alt="VictoryPed" width="64" valign="middle"> VictoryPed
+
+- **Repo:** VictoryPed *(private)*
+- **Package id:** `com.victorious.victoryped`
+- **Purpose:** Social network and marketplace for bully breeders.
 
 <img src="assets/divider.png" width="100%" alt="" />
 
