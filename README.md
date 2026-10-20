@@ -2,6 +2,14 @@
 
 <img src="assets/victorious-framework-logo.png" alt="Victorious Framework" width="900" />
 
+<p align="center">
+  <a href="https://preview.victorious-framework.pages.dev/"><img src="https://img.shields.io/badge/Victorious_Framework-Website-FFB000?style=for-the-badge&labelColor=0A0F1F&color=FFB000" alt="Victorious Framework website" /></a>
+  <a href="https://victorious-designs.pages.dev"><img src="https://img.shields.io/badge/Victorious_Designs-Website-FF2E97?style=for-the-badge&labelColor=0A0F1F&color=FF2E97" alt="Victorious Designs website" /></a>
+  <!-- Instagram badge goes here, e.g.:
+  <a href="https://instagram.com/HANDLE"><img src="https://img.shields.io/badge/Instagram-Follow-00F0FF?style=for-the-badge&logo=instagram&logoColor=00F0FF&labelColor=0A0F1F&color=00F0FF" alt="Instagram" /></a>
+  -->
+</p>
+
 <br />
 
 <img src="assets/banner.png" alt="VICTORIOUS93 — Victorious Framework: Android tooling, rooting and flashing, AI agents, Linux installers" width="100%" />
