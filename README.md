@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="assets/victorious-framework-logo.png" alt="Victorious Framework" width="900" />
+
+<br />
+
 <img src="assets/banner.png" alt="VICTORIOUS93 — Victorious Framework: Android tooling, rooting and flashing, AI agents, Linux installers" width="100%" />
 
 <br />
@@ -9,7 +13,7 @@
 >_ victorious-framework --whoami
 ```
 
-**[About](#-about)** · **[Featured](#-featured-projects)** · **[More](#-more-projects)** · **[Architecture](#-how-the-fleet-connects)** · **[Stack](#-tech-stack)**
+**[About](#-about)** · **[Fleet](#-victorious-fleet)** · **[More](#-more-apps--tools)** · **[Architecture](#-how-the-fleet-connects)** · **[Stack](#-tech-stack)**
 
 </div>
 
@@ -29,32 +33,58 @@ I'm Don, and I build the **Victorious Framework**: a set of Android, Linux and s
 
 <img src="assets/divider.png" width="100%" alt="" />
 
-## 🛰️ Featured projects
+## 🛰️ Victorious fleet
 
-| Project | What it is |
-|:--|:--|
-| [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) <br/> `Kotlin` `Compose` | The hub of the fleet. You chat with it, and it calls tools under a security policy, runs “Forge” build workflows, and sends commands to member apps. The JVM engine is CI-tested. |
-| [**rootforge-os**](https://github.com/Victorious93/rootforge-os) <br/> `Debian` `Termux` | A Debian live distro and Termux rootfs toolkit for Magisk/KernelSU module and boot-image work, with phone and desktop apps. |
-| [**Victorious Keyboard**](https://github.com/Victorious93/Victorious-Keyboard) <br/> `Android` | An Android keyboard based on FlorisBoard, with an AES-256-GCM encrypted clipboard, a terminal key row, snippets and offline dictionary packs. Nothing leaves the device. |
-| [**VictorSuite**](https://github.com/Victorious93/VictorSuite) <br/> `Termux` `proot` | A Termux/ZeroTermux-based Android Linux suite with proot containers, backup/restore, a plugin framework, X11 and automation. |
-| [**VictorLink64**](https://github.com/Victorious93/VictorLink64) <br/> `Early beta` | Plays N64 (Mupen64Plus) and SNES (bsnes) games from your own files, with built-in chess and online, Wi-Fi or Bluetooth rooms. |
-| [**HackerAI-Commander**](https://github.com/Victorious93/HackerAI-Commander) <br/> `Fork` `AIDL` | A fork of `hackerai-tech/hackerai`, the AI pentest assistant, plus a Kotlin/Compose Android companion that DroidCommand controls over AIDL. |
+Grouped by how each app connects to the hub. Package IDs are shown where the project defines one.
+
+### Controllers / hub
+
+| Project | Package | What it is |
+|:--|:--|:--|
+| [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | `ai.droidcommand.app` | Android AI agent hub: JVM-tested tool engine, Forge builds, and fleet IPC to Termux/security companions. |
+| **Pyra Claw** *(private, in development)* | — | Pi 5 + ESP32 command hub that bridges the phone controller to physical devices. |
+
+### Bound companions
+
+| Project | Package | What it is |
+|:--|:--|:--|
+| [**HackerAI-Commander**](https://github.com/Victorious93/HackerAI-Commander) | `ai.hackerai.companion` | Fork of `hackerai-tech/hackerai` — AI pentest assistant with a Kotlin/Compose Android companion for the fleet. |
+| [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) | `ai.pentestswarm.companion` | AGPL fork of Armur Pentest Swarm AI with an Android companion APK for the DroidCommand fleet. |
+| [**EDL-Commander**](https://github.com/Victorious93/EDL-Commander) | `ai.edlcommander.companion` | Safety-first Rust framework for Qualcomm EDL recovery — Phase 1 Sahara core + simulator (no USB yet). |
+
+### External nodes
+
+| Project | Package | What it is |
+|:--|:--|:--|
+| [**rootforge-os**](https://github.com/Victorious93/rootforge-os) | — | Debian live distro + Termux rootfs toolkit for Magisk/KernelSU module and boot-image work. |
+| [**File-Manager**](https://github.com/Victorious93/File-Manager) *(VictorFiles)* | `ai.victorious.filemanager` | Standalone Android file manager with dual panes, tabs, copy/move queue with undo, and optional fleet stub. |
+| [**Victorious-Keyboard**](https://github.com/Victorious93/Victorious-Keyboard) | — | Android IME based on FlorisBoard: encrypted clipboard, developer row, snippets, offline dictionary packs. |
+| [**victorious-flash**](https://github.com/Victorious93/victorious-flash) | — | Download, verify and flash Linux ISOs to USB (Tauri v2). |
+| [**victorious-mesh**](https://github.com/Victorious93/victorious-mesh) | — | Android VPN/mesh node for the droidcommand-AI fleet (self-hosted Headscale). |
+| [**victorious-browser**](https://github.com/Victorious93/victorious-browser) | — | Fleet security/recon browser: WebView shell, on-device HTTP(S) inspection, and Messenger fleet bridge. |
+| **victorsms** *(private, in development)* | `com.victorious.sms` | Fleet universal messaging APK (Matrix + bridges; EXTERNAL_NODE for droidcommand-AI). |
+| **victorlaunch** *(private, in development)* | `com.victorious.launch` | Fleet-native Android home launcher (Lawnchair-based EXTERNAL_NODE for droidcommand-AI). |
+| **victorspoof** *(private, in development)* | `com.victorious.spoof` | Fleet novelty/prank caller-ID Android app (owned-number pool + Twilio; EXTERNAL_NODE). |
+| [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | — | N64 (Mupen64Plus) and SNES (bsnes) from your own files, plus built-in chess and online / Wi-Fi / Bluetooth rooms. |
+
+### Termux / host
+
+| Project | Package | What it is |
+|:--|:--|:--|
+| [**VictorSuite**](https://github.com/Victorious93/VictorSuite) | — | Termux-based Android Linux suite: proot containers, backup/restore, plugins, X11, and automation tools. |
+| [**KYC-AuditLab**](https://github.com/Victorious93/KYC-AuditLab) | `com.identityshield.companion` | IdentityShield: local-first KYC security test lab against a bundled simulator (Phase 1). |
+| [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) | — | Cross-platform tool installer for Pi Zero 1.3 — browser/native UI over USB OTG or SSH. |
 
 <img src="assets/divider.png" width="100%" alt="" />
 
-## 🧰 More projects
+## 🧰 More apps & tools
 
-| Project | Status / scope | What it is |
-|:--|:--|:--|
-| [**Pentest-Swarm-AI**](https://github.com/Victorious93/Pentest-Swarm-AI) | AGPL fork | Armur-Ai's Go multi-agent pentest CLI, with an Android companion APK for the fleet. |
-| [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) | FastAPI | Installs tools on a Raspberry Pi Zero 1.3 over USB OTG or SSH, from a browser or native UI. |
-| [**victorious-mesh**](https://github.com/Victorious93/victorious-mesh) | tailscale-android fork | An Android VPN/mesh node for a self-hosted Headscale network. |
-| [**KYC-AuditLab**](https://github.com/Victorious93/KYC-AuditLab) | Simulator only | IdentityShield, a local-first KYC security test lab that runs against its own bundled simulator. |
-| [**Victorious Flash**](https://github.com/Victorious93/victorious-flash) | Tauri v2 | A desktop app that downloads Linux ISOs, checks them against checksums and flashes them to USB or SD. |
-| [**EDL-Commander**](https://github.com/Victorious93/EDL-Commander) | ⚠️ Not hardware-tested | A safety-first Rust framework for Qualcomm EDL recovery, with a Sahara core and a simulator. |
-| [**File-Manager**](https://github.com/Victorious93/File-Manager) | Standalone | An Android file manager with dual panes, tabs, and a copy/move queue with undo. |
-| [**DreamOS-Victorious**](https://github.com/Victorious93/DreamOS-Victorious) | ⚠️ Not flashable | Phase 1 groundwork for pulling Android ROM source together: profile validator, reproducible source bundle, SHA-256 integrity check. |
-| [**MT-Manager-VIP**](https://github.com/Victorious93/MT-Manager-VIP) *(FileForge)* | Skeleton (M0) | The skeleton of a clean-room Compose file manager. |
+Projects by Don that are not (yet) wired into the fleet connection model above.
+
+| Project | What it is |
+|:--|:--|
+| [**DreamOS-Victorious**](https://github.com/Victorious93/DreamOS-Victorious) | Phase 1 groundwork for Android ROM source integration: profile validator, reproducible source bundle, SHA-256 integrity check (not flashable). |
+| [**droidpilot**](https://github.com/Victorious93/droidpilot) *(DroidPilot Forge)* | Stable Android device automation for AI agents via Accessibility Service + MCP — no ADB, no OCR; enhanced fork for agentic control. |
 
 <img src="assets/divider.png" width="100%" alt="" />
 
@@ -71,6 +101,7 @@ flowchart LR
   Hub --- EN
   Hub --- TX
   Hub --- HP
+  Hub --- PHY["Pyra Claw<br/>Pi5+ESP32<br/>(private)"]
   subgraph BC["BOUND_COMPANION"]
     HAI["HackerAI-Commander"]
     PSA["Pentest-Swarm-AI"]
@@ -79,9 +110,14 @@ flowchart LR
   subgraph EN["EXTERNAL_NODE"]
     RF["rootforge-os"]
     FM["File-Manager"]
-    VK["Victorious Keyboard"]
-    VF["Victorious Flash"]
+    VK["Victorious-Keyboard"]
+    VF["victorious-flash"]
     VM["victorious-mesh"]
+    VB["victorious-browser"]
+    VSMS["victorsms (private)"]
+    VLC["victorlaunch (private)"]
+    VSP["victorspoof (private)"]
+    VL64["VictorLink64"]
   end
   subgraph TX["TERMUX_IPC"]
     VS["VictorSuite"]
@@ -93,7 +129,7 @@ flowchart LR
 ```
 
 > [!IMPORTANT]
-> This shows how the apps are *meant* to connect. Not every link is wired up yet. VictorLink64 isn't part of the fleet.
+> This shows how the apps are *meant* to connect. Not every link is wired up yet. Private repos are listed by name only until they are public.
 
 </details>
 
