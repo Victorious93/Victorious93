@@ -83,7 +83,7 @@ Grouped by how each app connects to the hub. Package IDs come from each projectâ
 | <img src="assets/logos/victorcam-logo.jpg" width="44" alt="" /> | [**VictorCam**](https://github.com/Victorious93/victorcam) | `com.victorious.cam` | OBS-style virtual camera *(repo scaffolding)* |
 | | [**VictorMango**](https://github.com/Victorious93/victormango) | `com.victorious.mango` | GL.iNet Mango / OpenWrt travel-router companion *(RPC auth real; features stubbed)* |
 | | [**VictorTaskbar**](https://github.com/Victorious93/victortaskbar) | `com.victorious.taskbar` *(planned)* | Desktop-style Android taskbar *(repo just created; README-only)* |
-| | VictorTrade *(private)* | n/a *(no app package yet)* | Crypto-bots hub for exchange APIs + self-hosted + on-chain |
+| | VictorTrade *(private)* | `com.victorious.trade` | Crypto-bots hub for exchange APIs + self-hosted + on-chain |
 
 ### Host & Shell Tools
 
