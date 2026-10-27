@@ -71,7 +71,7 @@ Grouped by how each app connects to the hub. Package IDs come from each projectâ
 | | App | Package | Purpose |
 |:-:|:--|:--|:--|
 | <img src="assets/logos/rootforge-logo.jpg" width="44" alt="" /> | [**rootforge-os**](https://github.com/Victorious93/rootforge-os) | `ai.rootforge.os` | Rooting / root-management |
-| <img src="assets/logos/file-manager-logo.png" width="44" alt="" /> | [**File-Manager**](https://github.com/Victorious93/File-Manager) | `ai.victorious.victorfiles` *(rename â†’ `filemanager` planned)* | Dual-pane power-user file manager |
+| <img src="assets/logos/file-manager-logo.png" width="44" alt="" /> | [**File-Manager**](https://github.com/Victorious93/File-Manager) | `ai.victorious.filemanager` | Dual-pane power-user file manager |
 | <img src="assets/logos/victorious-keyboard-logo.png" width="44" alt="" /> | [**Victorious-Keyboard**](https://github.com/Victorious93/Victorious-Keyboard) | `com.victorious.keyboard` | Custom keyboard + media controls |
 | <img src="assets/logos/victorious-flash-logo.png" width="44" alt="" /> | [**Victorious Flash**](https://github.com/Victorious93/victorious-flash) | `com.victorious.flash.android` | Desktop Linux ISO â†’ USB installer |
 | <img src="assets/logos/victorious-mesh-logo.jpg" width="44" alt="" /> | [**Victorious Mesh**](https://github.com/Victorious93/victorious-mesh) | `com.victorious.mesh` | Secure mesh / VPN |
@@ -81,6 +81,8 @@ Grouped by how each app connects to the hub. Package IDs come from each projectâ
 | <img src="assets/logos/victorspoof-logo.jpg" width="44" alt="" /> | [**VictorSpoof**](https://github.com/Victorious93/victorspoof) | `com.victorious.spoof` | Novelty caller-ID with compliance guards |
 | <img src="assets/logos/victorlink64-logo.png" width="44" alt="" /> | [**VictorLink64**](https://github.com/Victorious93/VictorLink64) | `org.victoriousframework.victorlink64` | Multi-game emulator hub *(not remote fleet)* |
 | <img src="assets/logos/victorcam-logo.jpg" width="44" alt="" /> | [**VictorCam**](https://github.com/Victorious93/victorcam) | `com.victorious.cam` | OBS-style virtual camera *(repo scaffolding)* |
+| | [**VictorMango**](https://github.com/Victorious93/victormango) | `com.victorious.mango` | GL.iNet Mango / OpenWrt travel-router companion *(RPC auth real; features stubbed)* |
+| | [**VictorTaskbar**](https://github.com/Victorious93/victortaskbar) | `com.victorious.taskbar` *(planned)* | Desktop-style Android taskbar *(repo just created; README-only)* |
 
 ### Host & Shell Tools
 
