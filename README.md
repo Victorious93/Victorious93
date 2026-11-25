@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="assets/victorious-framework-logo.png" alt="Victorious Framework" width="900" />
+<img src="assets/logo.png" alt="Victorious Framework logo" width="900" />
 
 <p>
-  <a href="https://victorious-framework.pages.dev"><img src="https://img.shields.io/badge/Victorious_Framework-Website-FFB000?style=for-the-badge&labelColor=0A0F1F&color=FFB000" alt="Victorious Framework website" /></a>
-  <a href="https://victorious-designs.pages.dev"><img src="https://img.shields.io/badge/Victorious_Designs-Website-FF2E97?style=for-the-badge&labelColor=0A0F1F&color=FF2E97" alt="Victorious Designs website" /></a>
-  <a href="https://www.instagram.com/sudo.victorious00"><img src="https://img.shields.io/badge/Instagram-@sudo.victorious00-00F0FF?style=for-the-badge&logo=instagram&logoColor=00F0FF&labelColor=0A0F1F&color=00F0FF" alt="Instagram @sudo.victorious00" /></a>
+  <a href="https://victorious-framework.pages.dev"><img src="https://img.shields.io/badge/Victorious_Framework-Website-00E5FF?style=for-the-badge&labelColor=0B0F1A&color=00E5FF" alt="Victorious Framework website" /></a>
+  <a href="https://victorious-designs.pages.dev"><img src="https://img.shields.io/badge/Victorious_Designs-Website-FF2BD6?style=for-the-badge&labelColor=0B0F1A&color=FF2BD6" alt="Victorious Designs website" /></a>
+  <a href="https://www.instagram.com/sudo.victorious00"><img src="https://img.shields.io/badge/Instagram-@sudo.victorious00-00E5FF?style=for-the-badge&logo=instagram&logoColor=00E5FF&labelColor=0B0F1A&color=00E5FF" alt="Instagram @sudo.victorious00" /></a>
 </p>
 
 <br />
@@ -14,7 +14,7 @@
 
 <br />
 
-[![Follow on GitHub](https://img.shields.io/github/followers/Victorious93?label=Follow&style=for-the-badge&logo=github&color=0A0F1F&labelColor=FF2E97&logoColor=00F0FF)](https://github.com/Victorious93)
+[![Follow on GitHub](https://img.shields.io/github/followers/Victorious93?label=Follow&style=for-the-badge&logo=github&color=0B0F1A&labelColor=FF2BD6&logoColor=00E5FF)](https://github.com/Victorious93)
 
 ```text
 >_ victorious-framework --whoami
@@ -56,7 +56,7 @@ Grouped by how each app connects to the hub. Package IDs come from each projectâ
 |:-:|:--|:--|:--|
 | <img src="assets/logos/droidcommand-logo.jpg" width="44" alt="" /> | [**droidcommand-AI**](https://github.com/Victorious93/droidcommand-AI) | `ai.droidcommand.app` | Fleet controller â€” remote command & orchestration |
 | <img src="assets/logos/pyraclaw-logo.jpg" width="44" alt="" /> | [**Pyra Claw**](https://github.com/Victorious93/pyra-claw) | `com.victorious.pyraclaw` *(companion)* / hardware hub | Pi 5 + ESP32 command hub |
-| <img src="assets/logos/victormodem-logo.jpg" width="44" alt="" /> | VictorModem *(private)* | hardware â€” no Android package yet | ESP32-S3 + cellular second line |
+| <img src="assets/logos/victormodem-logo.jpg" width="44" alt="" /> | [**VictorModem**](https://github.com/Victorious93/victormodem) | hardware â€” no Android package yet | ESP32-S3 + cellular second line |
 
 ### Bound Companions
 
@@ -93,6 +93,7 @@ Grouped by how each app connects to the hub. Package IDs come from each projectâ
 | <img src="assets/logos/kyc-auditlab-logo.png" width="44" alt="" /> | [**KYC-AuditLab**](https://github.com/Victorious93/KYC-AuditLab) | `com.identityshield.companion` | Local KYC / identity audit lab |
 | <img src="assets/logos/bakerpi-logo.jpg" width="44" alt="" /> | [**BakerPi-Installer**](https://github.com/Victorious93/BakerPi-Installer) | n/a (host tool) | Pi Zero tool installer (PC / on-device) |
 | | [**DreamOS-Victorious**](https://github.com/Victorious93/DreamOS-Victorious) | n/a | Phase 1 ROM source integration foundation |
+| | VictoriousOS *(private)* | n/a | AI-first Android ROM (prototype: not built or flashed yet) |
 
 ### Social / Marketplace
 
